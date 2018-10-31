@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+	<title>Learn to use waits</title>
+	<script type="text/javascript">
+		function needWaitAlert()  	{
+			setTimeout(function(){ alert("This Alert takes awhile to come up"); }, 
+					   3000);
+			document.getElementById("msg").innerHTML = "Wait for it....";
+		}
+	</script>
+</head>
+<body>
+  <p>Click the button to get a loooooong alert</p>
+  <input id="needWait" type="button" onclick="needWaitAlert()" value="Try It!" >
+  <p id="msg"></p>
+</body>
+</html>
